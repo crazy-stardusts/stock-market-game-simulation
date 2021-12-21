@@ -1,0 +1,23 @@
+<%- include('./partials/head.ejs') %> 
+<link rel="stylesheet" href="style.css">
+    <home>
+    
+    <div class="flex-parent jc-center">
+    	<form method="get" action="/join">
+        	<button type="submit" class ="create">Join Game</button>
+    	</form>
+    	<form method="get" action="/create">
+        	<button type="submit" class ="create">Create Game</button>
+    	</form>
+    </div>
+    <% if(gameid != 0) { %>
+        <p> Game ID : <%= gameid %> </p>
+        <% } %>
+    
+    <div class="box">
+    	<p>This website will help you to monitor and check the stock prices of several companies in real time or with every refresh (with a maximum lag<1 minute). you can also simulate a Stock Market Game where you can use virtual currency to invest and get a hands on experience on the working of the market.</p> 
+    </div>
+
+    </home>
+
+<%- include('./partials/footer.ejs') %> 

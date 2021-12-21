@@ -1,0 +1,45 @@
+<%- include('./partials/head.ejs') %> 
+<link rel="stylesheet" href="style.css">
+
+<game>
+
+    <h2>Game begins</h2>
+    <h3> Current balance: <%= userp.cash %> </h3>
+
+    <table style="width:100%">
+    <tr>
+      <th>Stock Name</th>
+      <th>Price</th> 
+      <th>Quantity</th>
+    </tr>
+      <% for(let i = 0; i < 50 ;i++) {%> 
+    <tr>
+        <th><%= stockn[i] %></th> 
+        <th><%= p[i] %></th>
+        <th><%= userp.stqy[i] %></th> 
+    </tr>
+    <% } %> 
+</table>
+
+
+    
+
+        <form action = "/trade" method = "POST" class = "loginform2">
+            <div class="textbox1">
+            <input type="text" id = "symbol" placeholder ="Stock Name" name="symbol" required>
+            </div>
+            <div class="textbox1">
+            <input type="number" id = "quantity" placeholder = "Quantity" name="quantity" required>
+            </div>
+            <div class="textbox1">
+            <input type="text" id = "act" placeholder = "Buy(B) or Sell(S)" name="act" required>
+            </div>
+        <button type="submit" class ="btn">Trade</button>
+
+        </form>
+
+
+</game>
+<%- include('./partials/footer.ejs') %> 
+
+
