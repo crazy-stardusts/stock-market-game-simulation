@@ -5,7 +5,7 @@ const app = express();
 const morgan = require('morgan');
 
 const mongoose = require('mongoose');
-const dburl = 'mongodb+srv://Ojas:ojas123@clusname.ywg00.mongodb.net/Stocks?retryWrites=true&w=majority';
+const dburl = 'mongodb+srv://Ojas:password@clusname.ywg00.mongodb.net/Stocks?retryWrites=true&w=majority';
 
 const Uls = require('./models/userlg');
 
