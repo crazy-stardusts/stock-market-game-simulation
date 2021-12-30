@@ -5,7 +5,7 @@ from pymongo import MongoClient
 def init_mongo(stock_name):
 
     cluster = MongoClient(
-        'mongodb+srv://crazy_stardusts:sujitmoto@clusname.ywg00.mongodb.net/Stocks?ssl=true&ssl_cert_reqs=CERT_NONE')
+        'mongodb+srv://crazy_stardusts:<password>@clusname.ywg00.mongodb.net/Stocks?ssl=true&ssl_cert_reqs=CERT_NONE')
 
     db = cluster["Stocks"]
     collection = db["prices"]
